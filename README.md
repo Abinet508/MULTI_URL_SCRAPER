@@ -17,7 +17,7 @@ This project is a multi URL scraper designed to extract specific information fro
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/yourusername/multi-url-scraper.git
+    git clone https://github.com/Abinet508/multi-url-scraper.git
     cd multi-url-scraper
     ```
 
