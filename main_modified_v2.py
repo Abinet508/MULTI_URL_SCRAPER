@@ -32,12 +32,12 @@ class GoogleSearch:
             "customsearch", "v1", developerKey="<API_KEY>" # Replace <API_KEY> with your API key
         )
         cx="c4c9c752c7ba54abc"
-        key_Words = ['Quick Change Connectors', 'Quick Disconnect Connectors', 'Fluidic Connectors', 'Hydraulic Connectors', 'Couplings']
+        key_Words = ['Abinet Tesfu']
         query = " ".join(key_Words)
         for url in urls:
             res = (
                 service.cse()
-                .list(q="Quick Change Connectors Quick Disconnect Connectors Fluidic Connectors Hydraulic Connectors Couplings",
+                .list(q=query,
                     cx=cx,
                     siteSearch=url)
                 .execute()
