@@ -17,7 +17,6 @@ import urllib.parse
 from playwright.sync_api import sync_playwright
 from requests_html import HTML
 import pandas as pd
-import pygsheets
 
 
 class GoogleSearch:
@@ -45,8 +44,6 @@ class GoogleSearch:
         self.bing_q = True
         self.sheet_name = "Zoom Add on List"
         self.current_path = os.path.dirname(os.path.abspath(__file__))
-        self.sheet_key = "1so2ht4nN5M5WiP-ityLfmlGgZez635G-biUnFbFPkhA"
-        self.gc = pygsheets.authorize(service_account_file=os.path.join(self.current_path,"..","pygsheets","pygsheets-service-399508-aafa08c0b1b4.json"))
         
         self.file_path = os.path.join(self.current_dir, 'results')
     
